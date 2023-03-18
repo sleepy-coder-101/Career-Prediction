@@ -78,6 +78,7 @@ const QuestionCard = ({ question, onRadioClick, no }) => {
             <RadioGroup
               row
               name="radio button"
+              className="radio-group"
               onChange={handleChange}
               sx={{
                 // width: "100%",

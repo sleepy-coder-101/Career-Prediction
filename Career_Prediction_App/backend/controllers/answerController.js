@@ -3,6 +3,8 @@ const Answers = require("../models/Answers");
 module.exports.submitResponse = async (req, res) => {
   const { answerArray } = req.body;
 
+  // console.log(answerArray);
+
   if (answerArray.length !== 10) {
     return res.status(301).json({
       message: "Bhai field chahiye! Khali mat choro!!",

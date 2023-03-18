@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 
 import { Container, Button } from "@mui/material/";
 
+import { questions } from "./constants/data";
+
 import Navbar from "./components/Navbar";
 import QuestionCard from "./components/QuestionCard";
 
@@ -30,21 +32,12 @@ const App = () => {
   };
 
   const handleFormChange = (data) => {
-    console.log("Answer were recieved here", data);
+    // console.log("Answer were recieved here", data);
 
-    // responses.map((response) => {
-    //   if (response.no === data.no) {
-    //     response.value = data.value;
-    //     // setResponses(response.value);
-    //   } else {
-    //     responses.push_back(data);
-    //   }
-    //   setResponses(response);
-
-    //   // return response;
-    // });
-
-    setResponses((oldData) => [...oldData, data]);
+    let newArray = responses.filter((response) => {
+      return response.no !== data.no;
+    });
+    setResponses([...newArray, data]);
 
     console.log(responses);
   };
@@ -79,14 +72,15 @@ const App = () => {
 
       <Container
         // mxaWidth="false"
+        component="form"
+        onSubmit={submitResponse}
         sx={{
           minWidth: "100%",
           mx: "0rem",
           textAlign: "center",
-          // backgroundColor: "green",
         }}
       >
-        {allQuestions.map((question) => (
+        {questions.map((question) => (
           <QuestionCard
             key={question.no}
             question={question.text}
@@ -96,9 +90,16 @@ const App = () => {
         ))}
 
         <Button
-          sx={{ fontSize: "2rem", m: "5rem", p: "1rem" }}
+          type="submit"
+          sx={{
+            width: "9rem",
+            fontSize: "1.2rem",
+            p: "0.8rem",
+            mb: "2rem",
+            letterSpacing: "0.2rem",
+          }}
           variant="contained"
-          onClick={submitResponse}
+          // onClick={submitResponse}
         >
           Submit
         </Button>
