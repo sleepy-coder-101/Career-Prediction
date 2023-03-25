@@ -9,7 +9,8 @@ const Results = () => {
 
   const fetchResults = async () => {
     const response = await fetch(
-      "http://localhost:5000/answer/get-personality",
+      // "http://localhost:5000/answer/get-personality",
+      "https://career-prediction-backend.sleepycoder101.xyz/answer/get-personality",
       {
         method: "GET",
         headers: {
