@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -31,15 +32,38 @@ const Navbar = () => {
         </Typography>
 
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
-          {/* <Button color="inherit" sx={{ fontSize: "1.1rem", ml: "2rem" }}>
-            Features
-          </Button> */}
-          <Button color="inherit" sx={{ fontSize: "1.1rem", ml: "2rem" }}>
-            About Model
-          </Button>
-          <Button color="inherit" sx={{ fontSize: "1.1rem", ml: "2rem" }}>
-            About Us
-          </Button>
+          <NavLink
+            to="/"
+            style={({ isActive }) => ({
+              color: isActive ? "#fff" : "#c3c3c3",
+            })}
+          >
+            <Button color="inherit" sx={{ fontSize: "1.1rem", ml: "2rem" }}>
+              Take the test
+            </Button>
+          </NavLink>
+
+          <NavLink
+            to="/aboutModel"
+            style={({ isActive }) => ({
+              color: isActive ? "#fff" : "#c3c3c3",
+            })}
+          >
+            <Button color="inherit" sx={{ fontSize: "1.1rem", ml: "2rem" }}>
+              About Model
+            </Button>
+          </NavLink>
+
+          <NavLink
+            to="/aboutUs"
+            style={({ isActive }) => ({
+              color: isActive ? "#fff" : "#c3c3c3",
+            })}
+          >
+            <Button color="inherit" sx={{ fontSize: "1.1rem", ml: "2rem" }}>
+              About Us
+            </Button>
+          </NavLink>
         </Box>
 
         <IconButton

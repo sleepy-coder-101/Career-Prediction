@@ -61,27 +61,4 @@ const questions = [
   },
 ];
 
-const questions_5 = [
-  {
-    text: "I am the life of the party.",
-    trait: "Extraversion",
-  },
-  {
-    text: "I get stressed out easily.",
-    trait: "Neuroticism",
-  },
-  {
-    text: "I feel little concern for others.",
-    trait: "Agreeableness",
-  },
-  {
-    text: "I am always prepared.",
-    trait: "Conscientiousness",
-  },
-  {
-    text: "I have a rich vocabulary.",
-    trait: "Openness",
-  },
-];
-
-export { questions, questions_5 };
+export default questions;

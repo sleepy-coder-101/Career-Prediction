@@ -15,6 +15,19 @@ const AnswerSchema = new mongoose.Schema(
         },
       },
     ],
+    personalityScore: [
+      {
+        percentage: {
+          type: Number,
+          required: true,
+        },
+
+        trait: {
+          type: String,
+          required: true,
+        },
+      },
+    ],
   },
   { timestamps: true }
 );

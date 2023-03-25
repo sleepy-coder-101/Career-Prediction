@@ -1,76 +1,89 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import { Container, Button } from "@mui/material/";
+import { Home, Results, AboutUs, AboutModel } from "./pages/index";
+import { Navbar } from "./components/index";
+// import ResultBar from "./components/ResultBar/ResultBar";
 
-import { questions } from "./constants/data";
-
-import Navbar from "./components/Navbar";
-import QuestionCard from "./components/QuestionCard";
+// import { Container, Button } from "@mui/material/";
+// import { questions } from "./constants/data";
+// import QuestionCard from "./components/QuestionCard/QuestionCard";
 
 const App = () => {
-  const [allQuestions, setAllQuestions] = useState([]);
-  const [responses, setResponses] = useState([]);
+  // const navigate = useNavigate();
 
-  const submitResponse = async (event) => {
-    event.preventDefault();
+  // const [allQuestions, setAllQuestions] = useState([]);
+  // const [responses, setResponses] = useState([]);
 
-    const res = await fetch("http://localhost:5000/answer/submit-response", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        answerArray: responses,
-      }),
-    });
+  // const submitResponse = async (event) => {
+  //   event.preventDefault();
 
-    if (res.status !== 200) {
-      console.log("Error in sending responses");
-    } else {
-      console.log("Data was sent to Backend");
-    }
-  };
+  //   const res = await fetch("http://localhost:5000/answer/submit-response", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       answerArray: responses,
+  //     }),
+  //   });
 
-  const handleFormChange = (data) => {
-    // console.log("Answer were recieved here", data);
+  //   if (res.status !== 200) {
+  //     console.log("Error in sending responses");
+  //   } else {
+  //     console.log("Data was sent to Backend");
+  //   }
 
-    let newArray = responses.filter((response) => {
-      return response.no !== data.no;
-    });
-    setResponses([...newArray, data]);
+  //   navigate("/results");
+  // };
 
-    console.log(responses);
-  };
+  // const handleFormChange = (data) => {
+  //   // console.log("Answer were recieved here", data);
 
-  const fetchQuestions = async () => {
-    const response = await fetch(
-      "http://localhost:5000/question/fetch-question",
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+  //   let newArray = responses.filter((response) => {
+  //     return response.no !== data.no;
+  //   });
+  //   setResponses([...newArray, data]);
 
-    if (response.status !== 200) {
-      console.log("Something wrong");
-    } else {
-      const res = await response.json();
-      const { data } = res;
-      setAllQuestions(data);
-    }
-  };
+  //   console.log(responses);
+  // };
 
-  useEffect(() => {
-    fetchQuestions();
-  }, []);
+  // const fetchQuestions = async () => {
+  //   const response = await fetch(
+  //     "http://localhost:5000/question/fetch-question",
+  //     {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     }
+  //   );
+
+  //   if (response.status !== 200) {
+  //     console.log("Something wrong");
+  //   } else {
+  //     const res = await response.json();
+  //     const { data } = res;
+  //     setAllQuestions(data);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   fetchQuestions();
+  // }, []);
 
   return (
     <div>
       <Navbar />
+      {/* <ResultBar /> */}
 
-      <Container
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/results" exact element={<Results />} />
+        <Route path="/aboutUs" exact element={<AboutUs />} />
+        <Route path="/aboutModel" exact element={<AboutModel />} />
+      </Routes>
+      {/* <Container
         // mxaWidth="false"
         component="form"
         onSubmit={submitResponse}
@@ -103,7 +116,7 @@ const App = () => {
         >
           Submit
         </Button>
-      </Container>
+      </Container> */}
     </div>
   );
 };
