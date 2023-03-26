@@ -14,18 +14,16 @@ const Home = () => {
     event.preventDefault();
 
     // const res = await fetch("http://localhost:5000/answer/submit-response", {
-    const res = await fetch(
-      "https://career-prediction-backend.sleepycoder101.xyz/answer/submit-response",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          answerArray: responses,
-        }),
-      }
-    );
+    // https://career-prediction-backend.sleepycoder101.xyz/answer/submit-response
+    const res = await fetch("http://localhost:5000/answer/submit-response", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        answerArray: responses,
+      }),
+    });
 
     if (res.status !== 200) {
       console.log("Error in sending responses");
