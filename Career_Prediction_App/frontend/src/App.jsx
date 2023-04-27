@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { Home, Results, AboutUs, AboutModel } from "./pages/index";
 import { Navbar } from "./components/index";
+
 // import ResultBar from "./components/ResultBar/ResultBar";
 
 // import { Container, Button } from "@mui/material/";
