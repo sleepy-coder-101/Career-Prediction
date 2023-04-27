@@ -13,10 +13,14 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",
-    "@mui/icons-material": "^5.11.11",
-    "@mui/material": "^5.11.12",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-material-ui-carousel": "^3.4.2",
     "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
