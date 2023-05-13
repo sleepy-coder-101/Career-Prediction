@@ -28,6 +28,10 @@ const AnswerSchema = new mongoose.Schema(
         },
       },
     ],
+    mbtiType: {
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true }
 );

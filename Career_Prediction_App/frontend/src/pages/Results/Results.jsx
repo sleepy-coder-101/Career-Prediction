@@ -6,6 +6,7 @@ import { ResultBar } from "../../components/index";
 
 const Results = () => {
   const [scores, setScores] = useState([]);
+  const [mbtiPersonality, setMbtiPersonality] = useState("");
 
   const fetchResults = async () => {
     const response = await fetch(
@@ -23,9 +24,11 @@ const Results = () => {
       console.log("Something wrong");
     } else {
       const res = await response.json();
-      const { data } = res;
+      const { data, personalityType } = res;
       console.log(data);
+      console.log(personalityType);
       setScores(data);
+      setMbtiPersonality(personalityType);
     }
   };
 
@@ -55,16 +58,29 @@ const Results = () => {
       >
         <Typography
           variant="h5"
-          sx={{ fontSize: "2.1rem", fontWeight: "400", mt: "5rem", mb: "2rem" }}
+          sx={{ fontSize: "2.1rem", fontWeight: "400", mt: "3rem", mb: "2rem" }}
         >
           Your Personality Score is:
         </Typography>
 
         {scores.map((score) => {
+          // console.log(scores);
+          console.log(score);
           return (
-            <ResultBar percentage={score.percentage} trait={score.trait} />
+            <ResultBar
+              key={`${score.trait}-${score.percentage}`}
+              percentage={score.percentage}
+              trait={score.trait}
+            />
           );
         })}
+
+        <Typography
+          variant="h5"
+          sx={{ fontSize: "2.1rem", fontWeight: "400", mt: "3rem", mb: "2rem" }}
+        >
+          Your MBTI Personality Type is: {mbtiPersonality}
+        </Typography>
       </Box>
     </Box>
   );

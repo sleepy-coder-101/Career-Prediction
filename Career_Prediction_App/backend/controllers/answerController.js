@@ -14,84 +14,79 @@ function calculateAverage(array) {
 }
 
 let results = [];
+let mbti = "";
 
 module.exports.submitResponse = async (req, res) => {
-  const EXT = [];
-  const AGR = [];
-  const CNS = [];
-  const NRT = [];
-  const OPN = [];
+  results = [];
+  const percentages = [];
   const { answerArray } = req.body;
 
   if (answerArray.length !== 10) {
     return res.status(301).json({
       message: "Bhai field chahiye! Khali mat choro!!",
     });
-    getPersonality;
   }
 
-  // console.log(answerArray);
-  // console.log(questionArray);
+  console.log(answerArray);
 
+  // Reverse Score the array
   answerArray.map((answer, index) => {
-    let value = parseInt(answer.value);
-
-    if (questionArray[index].reversed) {
-      value = parseInt(6 - value);
-    }
-
-    console.log(value);
-
-    if (questionArray[index].trait === "Extraversion") {
-      EXT.push(value);
-    }
-    if (questionArray[index].trait === "Agreeableness") {
-      AGR.push(value);
-    }
-    if (questionArray[index].trait === "Conscientiousness") {
-      CNS.push(value);
-    }
-    if (questionArray[index].trait === "Neuroticism") {
-      NRT.push(value);
-    }
-    if (questionArray[index].trait === "Openness") {
-      OPN.push(value);
+    if (index < 5) {
+      answer.value = parseInt(6 - answer.value);
+    } else {
+      answer.value = parseInt(answer.value);
     }
   });
+  console.log(answerArray);
 
-  console.log("Extraversion", EXT);
-  console.log("Agreeableness", AGR);
-  console.log("Conscientiousness", CNS);
-  console.log("Neuroticism", NRT);
-  console.log("Openness", OPN);
+  // Find FFM percentages
+  for (let i = 0; i < 5; i++) {
+    // console.log(answerArray[i].value);
+    // console.log(answerArray[i].value);
+    let sum = answerArray[i].value + answerArray[i + 5].value;
+    let value = sum * 10;
+    percentages.push(value);
+  }
 
-  const ext = {
-    percentage: calculateAverage(EXT),
-    trait: "Extraversion",
-  };
-  const agr = {
-    percentage: calculateAverage(AGR),
-    trait: "Agreeableness",
-  };
-  const cns = {
-    percentage: calculateAverage(CNS),
-    trait: "Conscientiousness",
-  };
-  const nrt = {
-    percentage: calculateAverage(NRT),
-    trait: "Neuroticism",
-  };
-  const opn = {
-    percentage: calculateAverage(OPN),
-    trait: "Openness",
-  };
+  console.log(percentages);
 
-  results = [ext, agr, cns, nrt, opn];
-  console.log(results);
+  const ffmTraits = [
+    "Openness",
+    "Conscientiousness",
+    "Extraversion",
+    "Agreeableness",
+    "Neuroticism",
+  ];
+
+  for (let i = 0; i < 5; i++) {
+    let resObj = {
+      percentage: percentages[i],
+      trait: ffmTraits[i],
+    };
+    results.push(resObj);
+  }
+
+  // Find MBTI types
+  mbti = "";
+
+  if (answerArray[2].value > answerArray[7].value) mbti += "E";
+  else mbti += "I";
+
+  if (answerArray[0].value > answerArray[5].value) mbti += "N";
+  else mbti += "S";
+
+  if (answerArray[3].value > answerArray[8].value) mbti += "F";
+  else mbti += "T";
+
+  if (answerArray[1].value > answerArray[6].value) mbti += "J";
+  else mbti += "P";
+
+  console.log(mbti);
 
   const newResponse = await Answers.create({
     userResponse: answerArray,
     personalityScore: results,
+    mbtiType: mbti,
   });
 
   if (!newResponse) {
@@ -112,5 +107,6 @@ module.exports.getPersonality = async (req, res) => {
   return res.status(200).json({
     message: "Personality were fetched",
     data: results,
+    personalityType: mbti,
   });
 };

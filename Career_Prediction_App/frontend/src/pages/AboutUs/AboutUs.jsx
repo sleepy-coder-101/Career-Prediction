@@ -1,12 +1,13 @@
 import React from "react";
 import "./AboutUs.css";
-import Avatar from "@mui/material/Avatar";
+
+// import { developers } from "../../constants/index";
+
 import { Container, Typography, Button } from "@mui/material/";
 import EmailIcon from "@mui/icons-material/Email";
 import IconButton from "@mui/material/IconButton";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEnvelope } from "@fortawesome/free-brands-svg-icons";
 
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -21,11 +22,10 @@ const AboutUs = () => {
       image: images.dev1,
       name: "Monirul Islam",
       description: "Frontend Developer",
-      email: "abc@gmail.com",
+      email: "monirul.work.1729@gmail.com",
       socialMedia: {
-        twitter: "https://twitter.com/bobjohnson",
-        github: "",
-        linkedin: "",
+        github: "https://github.com/sleepy-coder-101/",
+        linkedin: "https://www.linkedin.com/in/md-monirul-islam-577a711a5/",
       },
     },
 
@@ -35,8 +35,7 @@ const AboutUs = () => {
       description: "Frontend Developer",
       email: "duttasourav586@gmail.com",
       socialMedia: {
-        twitter: "",
-        github: "",
+        github: "https://github.com/Sourav-Dutta-12",
         linkedin: "https://www.linkedin.com/in/sourav-dutta-3375b220a/",
       },
     },
@@ -45,11 +44,10 @@ const AboutUs = () => {
       image: images.dev3,
       name: "Phirat Passi",
       description: "Machine Learning Engineer",
-      email: "abc@gmail.com",
+      email: "phiratpassiii@gmail.com",
       socialMedia: {
-        twitter: "",
-        github: "",
-        linkedin: "",
+        github: "https://github.com/Phirat-Passi",
+        linkedin: "https://www.linkedin.com/in/phirat-passi/",
       },
     },
   ];
@@ -59,7 +57,7 @@ const AboutUs = () => {
       <div className="developer-card">
         <Card sx={{ maxWidth: 345, minHeight: 350 }}>
           <div style={{ textAlign: "center" }}>
-            <CardMedia sx={{ height: 210 }} image={image} />
+            <CardMedia sx={{ minHeight: 210 }} image={image} />
           </div>
 
           <Typography
