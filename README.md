@@ -24,10 +24,10 @@ MBTI is a self-report questionnaire in personality typology that gauges how indi
 
 The MBTI assesses personality traits based on 4 dichotomous pairs of preferences:
 
-•	Extraversion (E) – Introversion (I)
-•	Sensing (S) – Intuition (N)
-•	Thinking (T) – Feeling (F)
-•	Judging (J) – Perceiving (P)
+*	Extraversion (E) – Introversion (I)
+*	Sensing (S) – Intuition (N)
+*	Thinking (T) – Feeling (F)
+*	Judging (J) – Perceiving (P)
 
 ![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/2143c68e-4f4c-4796-bb25-8344bb567dcc)
 
