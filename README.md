@@ -31,4 +31,12 @@ The MBTI assesses personality traits based on 4 dichotomous pairs of preferences
 
 ![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/2143c68e-4f4c-4796-bb25-8344bb567dcc)
 
+## BFI-10 (Big Five Inventory) 
+
+The BFI-10 scoring questionnaire is a set of questions used to assess an individual's personality traits based on their responses to ten items. Each item typically uses a rating scale (e.g., 1 to 5) for responses. After completing the questionnaire, scores for each of the Big Five personality dimensions (openness, conscientiousness, extraversion, agreeableness, and neuroticism) are calculated by summing the responses. Higher scores indicate a stronger presence of a trait, while lower scores suggest a lower presence.
+
+### Flowchart of BFI-10 Scoring 
+![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/b8c08513-11b3-4c91-9fd8-c1acb67b72a3)
+
+
 
