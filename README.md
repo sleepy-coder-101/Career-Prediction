@@ -1,6 +1,14 @@
 # Career Prediction
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+![GitHub Repo stars](https://img.shields.io/github/stars/sleepy-coder-101/Career-Prediction?logo=Apache%20Spark&style=for-the-badge)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/sleepy-coder-101/Career-Prediction?logo=Files&style=for-the-badge)  
+
+![GitHub forks](https://img.shields.io/github/forks/sleepy-coder-101/Career-Prediction?logo=Fork&style=for-the-badge)
+
+![GitHub issues](https://img.shields.io/github/issues/sleepy-coder-101/Career-Prediction?logo=Issue&style=for-the-badge)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/sleepy-coder-101/Career-Prediction?logo=GitHub&style=for-the-badge)
 
 This project aims to predict individuals' career paths using personality assessment models, including the Myers-Briggs Type Indicator (MBTI), Five Factor Model (FFM), and Big Five Inventory (BFI-10). The MBTI categorizes individuals into 16 personality types based on preferences in four dichotomies, while the FFM and BFI-10 assess personality across five dimensions. By analyzing personality traits, we aim to suggest career paths that align with individual traits, considering factors like extraversion, openness, and conscientiousness. It's important to note that personality traits are just one aspect of career guidance, with other factors like interests, values, and skills playing a role. Our goal is to contribute to career prediction research and assist individuals in making informed career decisions.
 
