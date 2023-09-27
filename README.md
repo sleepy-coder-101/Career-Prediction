@@ -53,6 +53,22 @@ The Big Five Inventory (BFI-10) assesses personality across five dimensions, whi
 
 ## Resources
 
+[1] [Rammstedt, B. & John, O.P. Measuring personality in one minute or less: A 10-item short version of the Big Five Inventory in English and German (2007)](https://www.sciencedirect.com/science/article/abs/pii/S0092656606000195)
+
+[2] [Pratiyush Guleria, Manu Sood. Explainable AI and machine learning: performance evaluation and explainability of classifiers on educational data mining inspired career counselling (2022)](https://link.springer.com/article/10.1007/s10639-022-11221-2)
+
+[3] [Prof. Priyanka Shahane, Prutha Rinke, Taniksha Datar, Soham Badjate. Student’s Career Interest Prediction using Machine Learning (2022)](https://www.irjet.net/archives/V9/i11/IRJET-V9I1175.pdf)
+
+[4] [Chelsea Song, Hyun Joo Shin, Chen Tang, Alexis Hanna, et. al. Investigating machine learning’s capacity to enhance the prediction of career choices (2022)](https://onlinelibrary.wiley.com/doi/full/10.1111/peps.12529)
+
+[5] [Abhishek S Rao, Bola Sunil Kamath, Ramya R, Shreya Chowdhury, et. al. Neural network in developing a personality prediction model for career guidance: A Boon for Career (2021)](https://www.researchgate.net/publication/341592047_Use_of_Artificial_Neural_Network_in_Developing_a_Personality_Prediction_Model_for_Career_Guidance_A_Boon_for_Career_Counselors)
+
+[6] [Murray R. Barrick, Michael K. Mount. The Big Five Personality Dimensions and Job Performance: A Meta-Analysis (2002)](https://www.researchgate.net/publication/47739408_The_Big_Five_Personality_Dimensions_and_Job_Performance)
+
+[7] [Schuhfried. (n.d.). Why are they called Big 5 and not Fabulous 4?](https://www.schuhfried.com/en-blog/big-5/ (Accessed on April 28, 2023))
+
+[8] [Warner, J. (2012, November 30). Temperament and Type](https://blog.readytomanage.com/is-type-and-temperament-the-same/ (Accessed on April 28, 2023))
+
 
 
 
