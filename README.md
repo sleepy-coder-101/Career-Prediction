@@ -1,4 +1,8 @@
-# Career Prediction
+# 🎓 Career Prediction
+
+<p align="center">
+  <img src="/Images/banner.png" />
+</p>
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/sleepy-coder-101/Career-Prediction?logo=Apache%20Spark&style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/sleepy-coder-101/Career-Prediction?logo=Files&style=for-the-badge) ![GitHub issues](https://img.shields.io/github/issues/sleepy-coder-101/Career-Prediction?logo=github&style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/sleepy-coder-101/Career-Prediction?logo=forgejo&style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/sleepy-coder-101/Career-Prediction?logo=GitHub&style=for-the-badge)
 
