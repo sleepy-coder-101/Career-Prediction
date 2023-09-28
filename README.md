@@ -20,7 +20,10 @@ The 5 traits are:
 * Agreeableness (friendly/compassionate vs. critical/rational)
 * Neuroticism (sensitive/nervous vs. resilient/confident)
 
-![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/1ebff5a7-2019-4b1c-b7eb-39bbad634e94)
+<div align="center">
+  <img src = "https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/1ebff5a7-2019-4b1c-b7eb-39bbad634e94">
+  <p>Five Factor Model (FFM)</p>
+</div>
 
 ## Myers-Briggs Type Indicator (MBTI) 
 
@@ -33,27 +36,39 @@ The MBTI assesses personality traits based on 4 dichotomous pairs of preferences
 *	Thinking (T) – Feeling (F)
 *	Judging (J) – Perceiving (P)
 
-![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/2143c68e-4f4c-4796-bb25-8344bb567dcc)
+<div align="center">
+  <img src = "https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/2143c68e-4f4c-4796-bb25-8344bb567dcc">
+  <p>Myers-Briggs Type Indicator (MBTI) </p>
+</div>
 
 ## BFI-10 (Big Five Inventory) 
 
 The BFI-10 questionnaire is a set of questions used to assess an individual's personality traits based on their responses to ten items. Each item typically uses a rating scale (e.g., 1 to 5) for responses. After completing the questionnaire, scores for each of the Big Five personality dimensions (openness, conscientiousness, extraversion, agreeableness, and neuroticism) are calculated by summing the responses. Higher scores indicate a stronger presence of a trait, while lower scores suggest a lower presence.
 
 ### Algorithm
-![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/fe85d71f-4a0d-4652-bf10-a97992b070d8)
 
-### Flowchart 
-![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/b8c08513-11b3-4c91-9fd8-c1acb67b72a3)
+<div align="center">
+  <img src="https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/fe85d71f-4a0d-4652-bf10-a97992b070d8">
+</div>
+
+### Flowchart
+<div align="center">
+  <img src="https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/b8c08513-11b3-4c91-9fd8-c1acb67b72a3">
+</div>
 
 ## BFI-10 to MBTI Mapping 
 
 The Big Five Inventory (BFI-10) assesses personality across five dimensions, while the Myers-Briggs Type Indicator (MBTI) categorizes personality types based on four dichotomies. Some research suggests possible connections between the two models, such as openness aligning with intuition, conscientiousness with judging, extraversion with extraversion, and agreeableness with feeling. However, these connections are not universally accepted, and the choice between the models depends on individual needs. The BFI-10 is a widely used and reliable tool for measuring personality traits. In summary, while there's ongoing debate and no formal mapping, further research could uncover potential correlations between these frameworks.
 
-### Algorithm 
-![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/b07e05f9-2c49-4374-8815-fd98a3554aa1)
+### Algorithm
+<div align="center">
+  <img src="https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/b07e05f9-2c49-4374-8815-fd98a3554aa1">
+</div>
 
 ### Flowchart
-![image](https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/4b5085d5-3127-4e75-8c1d-dbe0d7986293)
+<div align="center">
+  <img src="https://github.com/Phirat-Passi/Career-Prediction-using-ML/assets/67471222/4b5085d5-3127-4e75-8c1d-dbe0d7986293">
+</div>
 
 ## Resources
 
